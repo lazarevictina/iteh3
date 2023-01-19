@@ -1,4 +1,5 @@
 import React from "react";
+import "./Products.css";
 import {useState} from 'react';
 import Card from "./Card";
 const Products = (props) => {
@@ -20,7 +21,14 @@ const Products = (props) => {
               <h3 className="item-name">{productItem.name}</h3>
             </div>
             <div className="item-price">{productItem.price}e</div>
-
+            <div>
+              <button
+                className="item-add-button"
+                onClick={() => props.addProductHandler(productItem)}
+              >
+                Add to Cart
+              </button>
+            </div>
           </Card>
         ))}
       </div>
