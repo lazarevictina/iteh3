@@ -1,0 +1,13 @@
+.card{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 1.5rem;
+    margin: 40px 20px;
+    background-color: white;
+}
+
+.card:hover{
+    background-color: rgba(0,0,0,0.2);
+}
